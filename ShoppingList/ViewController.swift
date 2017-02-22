@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ShoppingList
 //
-//  Created by Basil on 2017-02-21.
+//  Created by Basil(300919992) on 2017-02-21.
 //  Copyright © 2017 Centennial College. All rights reserved.
 //
 
@@ -28,9 +28,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rows", for: indexPath) as! CustomTableViewCell
         
-        cell.itemName.text = data[indexPath.row]
+        //cell.itemName.text = data[indexPath.row]
         //cell.editButton?.tag = indexPath.row
-        
+        cell.configure(text: "", placeholder: "Enter item")
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,24 +38,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        //swipe to delete functionality
         if editingStyle == .delete{
             self.data.remove(at: indexPath.row)
             self.tableView.reloadData()
         }
     }
-  /*  func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.destructive, title: "Delete") {
-            (deleteAction, indexPath) -> Void in
-            
-        }
-        return [deleteAction]
-    }
-*/
+
     @IBAction func saveAction(_ sender: UIButton) {
+        
+        print(tableView.visibleCells.count)
         
     }
     @IBAction func cancelAction(_ sender: UIButton) {
         listName.text = ""
+        self.tableView.reloadData()
     }
 }
 

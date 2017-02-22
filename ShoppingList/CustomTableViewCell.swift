@@ -28,5 +28,16 @@ class CustomTableViewCell: UITableViewCell {
     @IBAction func stepperAction(_ sender: UIStepper) {
         valueLabel.text = "\(Int(stepper.value))"
     }
+    
+    
+    public func configure(text: String?, placeholder: String) {
+        itemName.text = text
+        itemName.placeholder = placeholder
+        
+        itemName.accessibilityValue = text
+        itemName.accessibilityLabel = placeholder
+    }
+    
+    
 
 }
