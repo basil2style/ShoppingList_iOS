@@ -12,7 +12,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var listName: UITextField!
    
-    let data: [String] = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
+    @IBOutlet weak var tableView: UITableView!
+    var data: [String] = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,21 +38,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
+        if editingStyle == .delete{
+            self.data.remove(at: indexPath.row)
+            self.tableView.reloadData()
+        }
     }
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+  /*  func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.destructive, title: "Delete") {
             (deleteAction, indexPath) -> Void in
             
         }
         return [deleteAction]
     }
-
+*/
     @IBAction func saveAction(_ sender: UIButton) {
         
     }
     @IBAction func cancelAction(_ sender: UIButton) {
-        
+        listName.text = ""
     }
 }
 

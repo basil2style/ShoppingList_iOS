@@ -164,6 +164,7 @@
                     </view>
                     <connections>
                         <outlet property="listName" destination="kcl-iW-l1H" id="3w6-sb-zsG"/>
+                        <outlet property="tableView" destination="EYN-gB-ZhD" id="cFm-II-ogX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
