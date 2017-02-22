@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E8AF10888D94CCC60396C55 /* Pods_ShoppingList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098F548C9709AEE2B2472749 /* Pods_ShoppingList.framework */; };
+		FDC016C51E5D12BE007AB17B /* ViewTableViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC016C41E5D12BE007AB17B /* ViewTableViewTableViewController.swift */; };
+		FDC016C71E5D1BBB007AB17B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC016C61E5D1BBB007AB17B /* CustomTableViewCell.swift */; };
 		FDF4464C1E5D0991006D2035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF4464B1E5D0991006D2035 /* AppDelegate.swift */; };
 		FDF4464E1E5D0991006D2035 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF4464D1E5D0991006D2035 /* ViewController.swift */; };
 		FDF446511E5D0991006D2035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF4464F1E5D0991006D2035 /* Main.storyboard */; };
 		FDF446531E5D0991006D2035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF446521E5D0991006D2035 /* Assets.xcassets */; };
 		FDF446561E5D0991006D2035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF446541E5D0991006D2035 /* LaunchScreen.storyboard */; };
+		FDF446601E5D0A3B006D2035 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDF4465F1E5D0A3B006D2035 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		098F548C9709AEE2B2472749 /* Pods_ShoppingList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69464B38ABD8C4608774AA8F /* Pods-ShoppingList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingList/Pods-ShoppingList.debug.xcconfig"; sourceTree = "<group>"; };
+		8069CA52A301314974C42FC3 /* Pods-ShoppingList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingList.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingList/Pods-ShoppingList.release.xcconfig"; sourceTree = "<group>"; };
+		FDC016C41E5D12BE007AB17B /* ViewTableViewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTableViewTableViewController.swift; sourceTree = "<group>"; };
+		FDC016C61E5D1BBB007AB17B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FDF446481E5D0991006D2035 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF4464B1E5D0991006D2035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF4464D1E5D0991006D2035 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		FDF446521E5D0991006D2035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDF446551E5D0991006D2035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDF446571E5D0991006D2035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF4465F1E5D0A3B006D2035 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8AF10888D94CCC60396C55 /* Pods_ShoppingList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FD6B758F2EBBA0FCD2103E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				098F548C9709AEE2B2472749 /* Pods_ShoppingList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B31F38B8DBD75AD758CACD15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69464B38ABD8C4608774AA8F /* Pods-ShoppingList.debug.xcconfig */,
+				8069CA52A301314974C42FC3 /* Pods-ShoppingList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FDF4463F1E5D0991006D2035 = {
 			isa = PBXGroup;
 			children = (
 				FDF4464A1E5D0991006D2035 /* ShoppingList */,
 				FDF446491E5D0991006D2035 /* Products */,
+				B31F38B8DBD75AD758CACD15 /* Pods */,
+				3FD6B758F2EBBA0FCD2103E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +86,13 @@
 			children = (
 				FDF4464B1E5D0991006D2035 /* AppDelegate.swift */,
 				FDF4464D1E5D0991006D2035 /* ViewController.swift */,
+				FDF4465F1E5D0A3B006D2035 /* GoogleService-Info.plist */,
 				FDF4464F1E5D0991006D2035 /* Main.storyboard */,
 				FDF446521E5D0991006D2035 /* Assets.xcassets */,
 				FDF446541E5D0991006D2035 /* LaunchScreen.storyboard */,
 				FDF446571E5D0991006D2035 /* Info.plist */,
+				FDC016C41E5D12BE007AB17B /* ViewTableViewTableViewController.swift */,
+				FDC016C61E5D1BBB007AB17B /* CustomTableViewCell.swift */,
 			);
 			path = ShoppingList;
 			sourceTree = "<group>";
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF4465A1E5D0991006D2035 /* Build configuration list for PBXNativeTarget "ShoppingList" */;
 			buildPhases = (
+				8A37E817F5821AEAF20934C1 /* [CP] Check Pods Manifest.lock */,
 				FDF446441E5D0991006D2035 /* Sources */,
 				FDF446451E5D0991006D2035 /* Frameworks */,
 				FDF446461E5D0991006D2035 /* Resources */,
+				B3E6C79BA1D13BBE0466A670 /* [CP] Embed Pods Frameworks */,
+				5153CAE2E7CB7268F310D264 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF446561E5D0991006D2035 /* LaunchScreen.storyboard in Resources */,
+				FDF446601E5D0A3B006D2035 /* GoogleService-Info.plist in Resources */,
 				FDF446531E5D0991006D2035 /* Assets.xcassets in Resources */,
 				FDF446511E5D0991006D2035 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +169,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5153CAE2E7CB7268F310D264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShoppingList/Pods-ShoppingList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A37E817F5821AEAF20934C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E6C79BA1D13BBE0466A670 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShoppingList/Pods-ShoppingList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDF446441E5D0991006D2035 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FDF4464E1E5D0991006D2035 /* ViewController.swift in Sources */,
+				FDC016C51E5D12BE007AB17B /* ViewTableViewTableViewController.swift in Sources */,
+				FDC016C71E5D1BBB007AB17B /* CustomTableViewCell.swift in Sources */,
 				FDF4464C1E5D0991006D2035 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +344,7 @@
 		};
 		FDF4465B1E5D0991006D2035 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69464B38ABD8C4608774AA8F /* Pods-ShoppingList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2BULHRS882;
@@ -270,6 +358,7 @@
 		};
 		FDF4465C1E5D0991006D2035 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8069CA52A301314974C42FC3 /* Pods-ShoppingList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2BULHRS882;
@@ -300,6 +389,7 @@
 				FDF4465C1E5D0991006D2035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
